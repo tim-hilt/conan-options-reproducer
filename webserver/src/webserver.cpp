@@ -1,11 +1,8 @@
 #include <iostream>
 #include "webserver.hpp"
+#include "3rdparty.hpp"
 
-void printFoo()
+void callPrintFoo()
 {
-#ifdef FOO
-    std::cout << FOO << "\n";
-#else
-    std::cout << "FOO not defined\n";
-#endif
+    printFoo();
 }

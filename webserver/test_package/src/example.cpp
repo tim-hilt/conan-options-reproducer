@@ -2,5 +2,5 @@
 
 int main()
 {
-    printFoo();
+    callPrintFoo();
 }

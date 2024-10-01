@@ -44,6 +44,12 @@ class webserverRecipe(ConanFile):
         cmake = CMake(self)
         cmake.install()
 
+    def requirements(self):
+        self.requires("3rdparty/0.1")
+
+    def config_options(self):
+        self.options["3rdparty"].FOO = '"Foo"'
+
     def package_info(self):
         self.cpp_info.libs = ["webserver"]
         for option, value in self.options.items():
