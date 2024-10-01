@@ -39,4 +39,4 @@ class user_appRecipe(ConanFile):
         cmake.install()
 
     def requirements(self):
-        self.requires("webserver_wrapper/0.1")
+        self.requires("webserver/0.1")

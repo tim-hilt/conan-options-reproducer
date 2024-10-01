@@ -46,6 +46,7 @@ class webserverRecipe(ConanFile):
 
     def requirements(self):
         self.requires("3rdparty/0.1")
+        self.requires("tcp_ip/0.1")
 
     def config_options(self):
         self.options["3rdparty"].FOO = '"Foo"'
